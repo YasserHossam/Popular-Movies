@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#141D27"
+    android:orientation="vertical"
+    tools:context="com.xware.task.view.activity.HomeActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/home_textview_popular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Popular Movies"
+                    android:textColor="@android:color/white"
+                    android:textSize="40px"
+                    android:textStyle="bold" />
+            </FrameLayout>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <ProgressBar
+        android:id="@+id/home_progressbar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/home_btn_reload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary"
+        android:text="Reload"
+        android:textColor="@android:color/white"
+        android:visibility="gone" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview_movies"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp" />
+</android.support.design.widget.CoordinatorLayout>

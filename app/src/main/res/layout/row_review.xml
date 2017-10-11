@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="#131B24"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/review_textview_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="15dp"
+        android:text="Andres Gomez"
+        android:textColor="@android:color/white"
+        android:textSize="35px" />
+
+    <TextView
+        android:id="@+id/review_textview_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:text="The minions are a nice idea and the animation and London
+recreation is really good, but that's about it.\The script is boring and the jokes
+    not really funny"
+        android:textColor="@android:color/white"
+        android:textSize="35px" />
+
+
+</LinearLayout>
