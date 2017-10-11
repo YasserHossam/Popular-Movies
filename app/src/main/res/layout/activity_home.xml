@@ -29,7 +29,7 @@
                     android:layout_marginLeft="10dp"
                     android:text="Popular Movies"
                     android:textColor="@android:color/white"
-                    android:textSize="40px"
+                    android:textSize="30px"
                     android:textStyle="bold" />
             </FrameLayout>
         </android.support.v7.widget.Toolbar>
